@@ -1,0 +1,100 @@
+:root {
+    --gris-nav: #353a40;
+}
+
+
+.navbar {
+    background-color: #353a40; /* Cambia este valor al color que desees */
+    position: relative;
+    z-index: 3;
+  }
+
+.green{
+    color: rgb(94, 188, 0);
+    
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.fixed-height {
+    height: 500px; /* Establece la altura fija deseada */
+    overflow: hidden; /* Oculta el contenido que desborde la altura fija */
+}
+
+
+.overlay {
+    position: absolute;
+    top: 85px; /* Ajusta la posición vertical para que comience después del navbar */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 85px); /* Resta la altura del navbar al 100% para llenar el espacio restante */
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de transparencia */
+    z-index: 1; /* Asegura que la capa esté sobre la imagen de fondo */
+}
+
+.content {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Asegura que el contenido esté sobre la capa de superposición */
+    color: #fff; /* Color del texto */
+}
+
+.imagen{ 
+    
+    top: 85px; /* Ajusta la posición vertical para que comience después del navbar */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 85px); /* Resta la altura del navbar al 100% para llenar el espacio restante */
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de transparencia */
+    z-index: 1; 
+}
+
+.btn-transparent {
+    background-color: transparent; /* Fondo transparente */
+    border-color: white; /* Contorno blanco */
+    color: white; /* Texto blanco */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Cambiar el color de fondo al verde cuando se coloca el cursor sobre el botón */
+.btn-transparent:hover {
+    background-color: rgb(255, 255, 255);
+    color: #353a40;
+}
+
+.btn-verde{
+    background-color: rgb(41,164,68);
+    color: #fff;
+}
+
+.btn-verde:hover{
+    background-color: rgb(26, 137, 50);
+    color: #fff;
+}
+
+/* ------------------ CARDS -------------------*/
+
+.center-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.text-small{
+    font-size: 12px;
+}
+.bg-honolulu{
+    background-color: #353a40;
+}
+.color-footer{
+    background-color: #1c3846;
+}
+.bg-button-enviar{
+    background-color: #98cc3c;
+}
+.semibold{
+    font-weight: 550;
+}
